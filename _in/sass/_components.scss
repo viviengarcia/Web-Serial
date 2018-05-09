@@ -1,0 +1,291 @@
+body
+{
+	overflow-x:	hidden;
+	overflow-y: visible;
+	color: $colorset-main_grey-darker;
+}
+
+body, a, a:visited, button
+{
+	color: $colorset-main_grey-darker;
+}
+
+.container-main-content
+{
+	margin: 0 auto;
+	width: 65rem;
+}
+
+header
+{
+	display: block;
+	position: sticky;
+	top: 0;
+	width: 100%;
+	padding-top:0.8rem;
+	font-size: 1.8rem;
+	background-color: $colorset_page-regular-background;
+	box-shadow: 0px 0px 48px 32px rgba($colorset_page-regular-background, 1);
+}
+
+.flex-container
+{
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+	border-bottom: 1px solid $colorset_page-regular-background-shadow;
+}
+
+header, header a
+{
+	color: #333;
+}
+
+header a
+{
+	padding: 0 0.6rem;
+	border: 1px solid transparent;
+}
+
+header a:hover
+{
+	text-decoration: none;
+	border-radius: 0.2rem;
+	border: 1px solid $colorset_page-regular-background-shadow;
+	background-color: rgba(0,0,0,0.06);
+}
+
+header menu li
+{
+	display: inline-block;
+}
+
+header .logo
+{
+	margin-top: 0.6rem
+}
+header menu
+{
+	margin:0.6rem 0;
+	padding-left: 0;
+}
+
+.alt-nav
+{
+	display: inline-flex;
+	width: 65rem;
+	height: 4.4rem;
+	padding-top: 1.8rem;
+	margin: 0 auto;
+	flex-direction: row;
+	justify-content: space-between;
+	font-size: 1.3rem;
+	color: #555;
+}
+
+.word-count
+{
+	display:inline-block;
+	padding: 0.1rem 0.4rem 0;
+}
+
+.next, .previous
+{
+	display: inline-block;
+	/*margin-top: 0.8rem;*/
+}
+
+li > p
+{
+	display: inline;
+	margin-left: -0.4rem;
+}
+
+.button-not
+{
+	border: none;
+	font-family: "Iowan Old Style", Georgia, serif;
+	font-size: 1.7rem;
+	background-color: transparent;
+}
+
+
+/*
+ *	ZONE: HEADER
+ */
+
+.menu-dropdown-button > button
+{
+	@extend .button-not;
+	&:after
+	{
+		content: "▽";
+		display: inline-block;
+		font-size: 1rem;
+		padding: 0 0.3rem 0.3rem;
+		vertical-align: middle;
+	}
+}
+
+.menu-dropdown-button:hover > button
+{
+	&:after
+	{
+		display: none;
+	}
+}
+
+.menu-dropdown-button:hover
+{
+	margin-right: 2.1rem;
+}
+
+.menu-dropdown-button > ul
+{
+	display: none;
+}
+
+.menu-dropdown-button:hover > ul
+{
+	display: unset;
+	position: absolute;
+	top: 5.4rem;
+	right: 0.2rem;
+	padding: 1.2rem 0.6rem;
+	border: 1px solid rgba(0,0,0,0.1);
+	border-radius: 0.6rem;
+	box-shadow: 0px 3px 36px 6px rgba(0, 0, 0, 0.12);
+	background-color: $colorset_page-regular-background;
+
+	&:before
+	{
+		content: url('menu-top.png');
+		z-index: 100;
+		position: absolute;
+		top: -1.7rem;
+		right: 4.8rem;
+		width: 16px;
+		height: 16px;
+		background-color: transparent;
+	}
+
+	li
+	{
+		text-align: right;
+		font-size: 1.6rem;
+		list-style-type: none;
+	}
+}
+
+.floating-list
+{
+	position: absolute;
+	top:18rem;
+	right: 0;
+	display: inline-block;
+	border: 1px solid #b6d6ef;
+	border-right: none;
+	border-radius: 0.4rem 0 0 0.4rem;
+	background-color: #d5e6f3;
+	cursor: pointer;
+
+	button
+	{
+		@extend .menu-dropdown-button;
+		display: block;
+		padding: 0.8rem 0.8rem 0.8rem 1.2rem;
+		margin-right: 0;
+	}
+}
+
+.floating-list.menu-dropdown-button:hover
+{
+	margin-right: 0;
+
+	button
+	{
+		margin-right: 2.1rem;
+	}
+	ul
+	{
+		width: max-content;
+
+		&:before
+		{
+			content: url('menu-top.png');
+			z-index: 100;
+			position: absolute;
+			top: -1.7rem;
+			right: 4.9rem;
+			width: 16px;
+			height: 16px;
+			background-color: transparent;
+			// border: 5px solid red;
+		}
+	}
+}
+
+.menu-dropdown-list
+{
+	li
+	{
+		display: list-item;
+	}
+}
+
+
+/*
+ *	LAYOUT: CHAPTER
+ */
+
+.content-chapter
+{
+	p
+	{
+		padding: 0.8rem 0 0;
+		margin: 0;
+		text-indent: 1.6rem;
+		text-align: justify;
+		text-align-last: auto;
+	}
+
+	 p:first-of-type
+	{
+		text-indent: unset;
+	}
+
+	h2
+	{
+		@extend .txtcenter;
+		padding-top: 8rem;
+		margin-top: 8.2rem;
+	}
+
+	hr
+	{
+		margin:	3.2rem 10rem;
+	}
+
+	ul > li
+	{
+		list-style-type: none;
+
+		&:before
+		{
+			content: '\25aa \a0';
+			display: inline-block;
+			vertical-align: middle;
+			margin-top: -0.6rem;
+			margin-left: - 1rem;
+			font-weight: 500;
+			color: $colorset-main_grey-dark;
+		}
+	}
+
+	code
+	{
+		white-space: pre-wrap;
+	}
+}
