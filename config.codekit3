@@ -148,18 +148,18 @@
 		"oAP": "\/_out\/Web Serial.css.map",
 		"oF": 0
 		},
-	"\/_test\/index copy.html": {
+	"\/_test\/marked.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/_test\/index copy.html",
+		"oAP": "\/_test\/marked.html",
 		"oF": 0
 		},
-	"\/_test\/index.html": {
+	"\/_test\/publite.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/_test\/index.html",
+		"oAP": "\/_test\/publite.html",
 		"oF": 0
 		},
 	"\/Web Serial - A Custom Marked Stylesheet.sublime-project": {
