@@ -1,0 +1,171 @@
+
+
+
+
+/*****************************************************************************************\
+			$$ Variables - Web Serial Theme
+\*****************************************************************************************/
+
+$colorset-main_white: #fffcfc;
+$colorset-main_black: #0f0d09;
+$colorset-main_grey-medium: #888785;
+$colorset-main_grey-light: lighten($colorset-main_grey-medium, 20);
+$colorset-main_grey-lighter: lighten($colorset-main_grey-medium, 40);
+$colorset-main_grey-dark: darken($colorset-main_grey-medium, 20);
+$colorset-main_grey-darker: darken($colorset-main_grey-medium, 40);
+
+
+$colorset-main_blue-neutral: blue;
+$colorset-main_red-neutral: red;
+
+$colorset_page-regular-background: desaturate(darken($colorset-main_white, 4), 85);
+$colorset_page-regular-background-shadow: darken($colorset_page-regular-background, 8);
+
+/* Preliminary: @font stack */
+@import url('https://fonts.googleapis.com/css?family=Alegreya:500,500i,700');
+
+$fontstack-headings: Alegreya, "Iowan Old Style", Georgia, serif;
+$fontstack-main: Alegreya, "Iowan Old Style", Georgia, serif;
+$fontstack-code: "Source Code Pro", Menlo, Consolas,'Liberation Mono', Courier, monospace;
+
+$link: rgba(79, 123, 155, 1.0);
+
+$canon: 1.2rem;
+$atom:0.3rem;
+
+//
+// == Preliminary: @media variables
+//
+
+// @media phone small
+$media-phone-small: "only screen and ( min-width: 320px ) and ( orientation: portrait )";
+
+$media-phone-small-retina: "only screen and ( -webkit-min-device-pixel-ratio: 2 ) and ( min-width: 320px ) and ( orientation: portrait ),
+							only screen and (    -moz-min-device-pixel-ratio: 2 ) and ( min-width: 320px ) and ( orientation: portrait ),
+							only screen and (    -o-min-device-pixel-ratio: 2/1 ) and ( min-width: 320px ) and ( orientation: portrait ),
+							only screen and (         min-device-pixel-ratio: 2 ) and ( min-width: 320px ) and ( orientation: portrait ),
+							only screen and (            min-resolution: 192dpi ) and ( min-width: 320px ) and ( orientation: portrait ),
+							only screen and (             min-resolution: 2dppx ) and ( min-width: 320px ) and ( orientation: portrait )";
+
+$media-phone-small-retina-landscape:   "only screen and ( -webkit-min-device-pixel-ratio: 2 ) and ( min-width: 320px ) and ( orientation: landscape ),
+										only screen and (    -moz-min-device-pixel-ratio: 2 ) and ( min-width: 320px ) and ( orientation: landscape ),
+										only screen and (    -o-min-device-pixel-ratio: 2/1 ) and ( min-width: 320px ) and ( orientation: landscape ),
+										only screen and (         min-device-pixel-ratio: 2 ) and ( min-width: 320px ) and ( orientation: landscape ),
+										only screen and (            min-resolution: 192dpi ) and ( min-width: 320px ) and ( orientation: landscape ),
+										only screen and (             min-resolution: 2dppx ) and ( min-width: 320px ) and ( orientation: landscape )";
+
+
+// @media phone medium
+$media-phone-medium: "only screen and ( min-width: 360px ) and ( orientation: portrait )";
+
+$media-phone-medium-retina:    "only screen and ( -moz-min-device-pixel-ratio: 2 ) and ( min-width: 360px ) and ( orientation: portrait ),
+								only screen and ( -o-min-device-pixel-ratio: 2/1 ) and ( min-width: 360px ) and ( orientation: portrait ),
+								only screen and (      min-device-pixel-ratio: 2 ) and ( min-width: 360px ) and ( orientation: portrait ),
+								only screen and (         min-resolution: 192dpi ) and ( min-width: 360px ) and ( orientation: portrait ),
+								only screen and (          min-resolution: 2dppx ) and ( min-width: 360px ) and ( orientation: portrait )";
+
+$media-phone-medium-retina-landscape:  "only screen and ( -webkit-min-device-pixel-ratio: 2 ) and ( min-width: 360px ) and ( orientation: landscape ),
+										only screen and (    -moz-min-device-pixel-ratio: 2 ) and ( min-width: 360px ) and ( orientation: landscape ),
+										only screen and (    -o-min-device-pixel-ratio: 2/1 ) and ( min-width: 360px ) and ( orientation: landscape ),
+										only screen and (         min-device-pixel-ratio: 2 ) and ( min-width: 360px ) and ( orientation: landscape ),
+										only screen and (            min-resolution: 192dpi ) and ( min-width: 360px ) and ( orientation: landscape ),
+										only screen and (             min-resolution: 2dppx ) and ( min-width: 360px ) and ( orientation: landscape )";
+
+
+// @media phone large
+$media-phone-large: "only screen and ( min-width: 480px ) and ( orientation: portrait )";
+
+$media-phone-large-retina: "only screen and ( -moz-min-device-pixel-ratio: 2 ) and ( min-width: 480px ) and ( orientation: portrait ),
+							only screen and ( -o-min-device-pixel-ratio: 2/1 ) and ( min-width: 480px ) and ( orientation: portrait ),
+							only screen and (      min-device-pixel-ratio: 2 ) and ( min-width: 480px ) and ( orientation: portrait ),
+							only screen and (         min-resolution: 192dpi ) and ( min-width: 480px ) and ( orientation: portrait ),
+							only screen and (          min-resolution: 2dppx ) and ( min-width: 480px ) and ( orientation: portrait )";
+
+$media-phone-large-retina-landscape:   "only screen and ( -webkit-min-device-pixel-ratio: 2 ) and ( min-width: 480px ) and ( orientation: landscape ),
+										only screen and (    -moz-min-device-pixel-ratio: 2 ) and ( min-width: 480px ) and ( orientation: landscape ),
+										only screen and (    -o-min-device-pixel-ratio: 2/1 ) and ( min-width: 480px ) and ( orientation: landscape ),
+										only screen and (         min-device-pixel-ratio: 2 ) and ( min-width: 480px ) and ( orientation: landscape ),
+										only screen and (            min-resolution: 192dpi ) and ( min-width: 480px ) and ( orientation: landscape ),
+										only screen and (             min-resolution: 2dppx ) and ( min-width: 480px ) and ( orientation: landscape )";
+
+
+// @media phablet
+$media-phablet: "only screen and ( min-width: 600px ) and ( orientation: portrait )";
+
+$media-phablet-retina: "only screen and ( -moz-min-device-pixel-ratio: 2 ) and ( min-width: 600px ) and ( orientation: portrait ),
+						only screen and ( -o-min-device-pixel-ratio: 2/1 ) and ( min-width: 600px ) and ( orientation: portrait ),
+						only screen and (      min-device-pixel-ratio: 2 ) and ( min-width: 600px ) and ( orientation: portrait ),
+						only screen and (         min-resolution: 192dpi ) and ( min-width: 600px ) and ( orientation: portrait ),
+						only screen and (          min-resolution: 2dppx ) and ( min-width: 600px ) and ( orientation: portrait )";
+
+$media-phablet-retina-landscape:   "only screen and ( -webkit-min-device-pixel-ratio: 2 ) and ( min-width: 600px ) and ( orientation: landscape ),
+									only screen and (    -moz-min-device-pixel-ratio: 2 ) and ( min-width: 600px ) and ( orientation: landscape ),
+									only screen and (    -o-min-device-pixel-ratio: 2/1 ) and ( min-width: 600px ) and ( orientation: landscape ),
+									only screen and (         min-device-pixel-ratio: 2 ) and ( min-width: 600px ) and ( orientation: landscape ),
+									only screen and (            min-resolution: 192dpi ) and ( min-width: 600px ) and ( orientation: landscape ),
+									only screen and (             min-resolution: 2dppx ) and ( min-width: 600px ) and ( orientation: landscape )";
+
+
+// @media tablet
+$media-tablet-small:   "screen and ( min-width: 768px ) and ( orientation: portrait )";
+
+$media-tablet-small-landscape: "screen and ( min-width: 1024px ) and ( orientation: landscape )";
+
+$media-tablet-retina:  "only screen and ( -moz-min-device-pixel-ratio: 2 ) and ( min-width: 768px ) and ( orientation: portrait ),
+						only screen and ( -o-min-device-pixel-ratio: 2/1 ) and ( min-width: 768px ) and ( orientation: portrait ),
+						only screen and (      min-device-pixel-ratio: 2 ) and ( min-width: 768px ) and ( orientation: portrait ),
+						only screen and (         min-resolution: 192dpi ) and ( min-width: 768px ) and ( orientation: portrait ),
+						only screen and (          min-resolution: 2dppx ) and ( min-width: 768px ) and ( orientation: portrait )";
+
+$media-tablet-retina-landscape:    "only screen and ( -webkit-min-device-pixel-ratio: 2 ) and ( min-width: 1024px ) and ( orientation: landscape ),
+									only screen and (    -moz-min-device-pixel-ratio: 2 ) and ( min-width: 1024px ) and ( orientation: landscape ),
+									only screen and (    -o-min-device-pixel-ratio: 2/1 ) and ( min-width: 1024px ) and ( orientation: landscape ),
+									only screen and (         min-device-pixel-ratio: 2 ) and ( min-width: 1024px ) and ( orientation: landscape ),
+									only screen and (            min-resolution: 192dpi ) and ( min-width: 1024px ) and ( orientation: landscape ),
+									only screen and (             min-resolution: 2dppx ) and ( min-width: 1024px ) and ( orientation: landscape )";
+
+
+// @media desktop
+$media-desktop-small: "screen and ( min-width: 1024px )";
+
+$media-desktop-small-retina:   "only screen and ( -moz-min-device-pixel-ratio: 2 ) and ( min-width: 1024px ),
+								only screen and ( -o-min-device-pixel-ratio: 2/1 ) and ( min-width: 1024px ),
+								only screen and (      min-device-pixel-ratio: 2 ) and ( min-width: 1024px ),
+								only screen and (         min-resolution: 192dpi ) and ( min-width: 1024px ),
+								only screen and (          min-resolution: 2dppx ) and ( min-width: 1024px )";
+
+
+// @media desktop medium
+$media-desktop-medium: "screen and ( min-width: 1440px )";
+
+$media-desktop-medium-retina:  "only screen and ( -moz-min-device-pixel-ratio: 2 ) and ( min-width: 1440px ),
+								only screen and ( -o-min-device-pixel-ratio: 2/1 ) and ( min-width: 1440px ),
+								only screen and (      min-device-pixel-ratio: 2 ) and ( min-width: 1440px ),
+								only screen and (         min-resolution: 192dpi ) and ( min-width: 1440px ),
+								only screen and (          min-resolution: 2dppx ) and ( min-width: 1440px )";
+
+
+// @media phone large
+$media-desktop-large:  "screen and ( min-width: 1680px )";
+
+$media-desktop-large-retina:   "only screen and ( -moz-min-device-pixel-ratio: 2 ) and ( min-width: 1680px ),
+								only screen and ( -o-min-device-pixel-ratio: 2/1 ) and ( min-width: 1680px ),
+								only screen and (      min-device-pixel-ratio: 2 ) and ( min-width: 1680px ),
+								only screen and (         min-resolution: 192dpi ) and ( min-width: 1680px ),
+								only screen and (          min-resolution: 2dppx ) and ( min-width: 1680px )";
+
+$media-desktop-larger: "screen and ( min-width: 1920px )";
+
+$media-desktop-larger-retina:  "only screen and ( -moz-min-device-pixel-ratio: 2 ) and ( min-width: 1920px ),
+								only screen and ( -o-min-device-pixel-ratio: 2/1 ) and ( min-width: 1920px ),
+								only screen and (      min-device-pixel-ratio: 2 ) and ( min-width: 1920px ),
+								only screen and (         min-resolution: 192dpi ) and ( min-width: 1920px ),
+								only screen and (          min-resolution: 2dppx ) and ( min-width: 1920px )";
+
+
+
+
+/*****************************************************************************************\
+			$$ Normalize - Web Serial Theme
+\*****************************************************************************************/
+

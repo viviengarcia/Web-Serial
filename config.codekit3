@@ -9,23 +9,25 @@
 	],
 "creatorBuild": "26680",
 "files": {
-	"\/_in\/menu-top.png": {
-		"ft": 32768,
-		"iS": 929,
-		"oA": 0,
-		"oAP": "\/_in\/menu-top.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"\/_in\/sass\/.sass-cache\/5833df3b77eb7c8c6dc722c171ef936c4d3172f5\/stylesheet.scssc": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/_in\/sass\/.sass-cache\/5833df3b77eb7c8c6dc722c171ef936c4d3172f5\/stylesheet.scssc",
 		"oF": 0
+		},
+	"\/_in\/sass\/_blocks.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 5,
+		"dS": 2,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/_out\/_blocks.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
 		},
 	"\/_in\/sass\/_components.scss": {
 		"aP": 1,
@@ -53,15 +55,54 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/_in\/sass\/_main.scss": {
-		"aP": 0,
+	"\/_in\/sass\/_helpers.scss": {
+		"aP": 1,
 		"bl": 0,
-		"dP": 10,
+		"dP": 5,
 		"dS": 2,
 		"ft": 4,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "\/_in\/sass\/_main.css",
+		"oAP": "\/_out\/_helpers.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/_in\/sass\/_marked.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 5,
+		"dS": 2,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/_out\/_marked.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/_in\/sass\/_normalize.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 5,
+		"dS": 2,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/_out\/_normalize.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/_in\/sass\/_vars.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 5,
+		"dS": 2,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/_out\/_vars.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -78,6 +119,17 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"\/_out\/menu-top.png": {
+		"ft": 32768,
+		"iS": 929,
+		"oA": 0,
+		"oAP": "\/_out\/menu-top.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
 		},
 	"\/_out\/Web Serial.css": {
 		"aP": 1,
@@ -96,39 +148,19 @@
 		"oAP": "\/_out\/Web Serial.css.map",
 		"oF": 0
 		},
+	"\/_test\/index copy.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/_test\/index copy.html",
+		"oF": 0
+		},
 	"\/_test\/index.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/_test\/index.html",
 		"oF": 0
-		},
-	"\/_test\/index.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 1,
-		"oAP": "\/_test\/index.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/_test\/index.pug": {
-		"cB": 0,
-		"cOD": 1,
-		"ft": 512,
-		"oA": 0,
-		"oAP": "\/_test\/index.html",
-		"oF": 2,
-		"oS": 0
 		},
 	"\/Web Serial - A Custom Marked Stylesheet.sublime-project": {
 		"cB": 0,

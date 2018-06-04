@@ -1,0 +1,267 @@
+
+
+
+
+/*****************************************************************************************\
+			$$ Blocks - Web Serial Theme
+\*****************************************************************************************/
+
+
+/*
+ * == Interface
+ */
+
+
+/* ++ Header */
+.ws-header
+{
+	@include flex-container;
+
+	.ws-img
+	{
+		width: 1.8rem;
+		height: 1.8rem;
+		margin-bottom: 0.6rem;
+		background: transparent url('http://via.placeholder.com/18x18') top left no-repeat;
+	}
+	.ws-heading h1
+	{
+		@include typo-xs;
+		font-weight: 500;
+	}
+	.ws-button
+	{
+		width: 1.8rem;
+		height: 1.8rem;
+		background: transparent url('http://via.placeholder.com/18x18') top left no-repeat;
+	}
+}
+
+/* ++ Footer */
+.ws-nav-footer
+{
+	ws-nav-container
+	{
+		display: inline-flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		width: 100%;
+		padding-bottom: 0.9rem;
+	}
+	.ws-text-container p
+	{
+		font-size: 1rem;
+		line-height: 1;
+		text-align: center;
+		padding-bottom: 0.3rem;
+	}
+}
+
+/* ++ Nav Alt */
+.next, .previous
+{
+	display: inline-block;
+}
+
+
+/*
+ * == Main Content
+ */
+
+.container-main-content
+{
+	width: 34rem;
+	margin: 0 auto;
+	padding: 1.2rem 0 0;
+
+	@media #{$media-desktop-small} {
+		width: 65rem;
+	}
+}
+
+.content-chapter
+{
+	padding-bottom: 4.2rem;
+
+	p
+	{
+		padding: 0.3rem 0 0;
+		text-indent: 1.6rem;
+		text-align: justify;
+		text-align-last: auto;
+	}
+
+	ul + p, p:first-of-type
+	{
+		text-indent: unset;
+	}
+
+	h2.typo-m
+	{
+		@include uppercase;
+		@include typo-m;
+		padding-top: 3.6rem;
+		font-family: $fontstack-headings;
+	}
+
+	hr
+	{
+		margin:	2.4rem 0 0;
+	}
+
+	ul > li
+	{
+		list-style-type: none;
+
+		&:before
+		{
+			content: '\25aa \a0';
+			display: inline-block;
+			vertical-align: middle;
+			margin-top: -0.6rem;
+			margin-left: - 1rem;
+			font-weight: 500;
+			color: $colorset-main_grey-dark;
+		}
+	}
+}
+
+// .alt-nav
+// {
+// 	display: inline-flex;
+// 	width: 65rem;
+// 	height: 4.4rem;
+// 	padding-top: 1.8rem;
+// 	margin: 0 auto;
+// 	flex-direction: row;
+// 	justify-content: space-between;
+// 	font-size: 1.3rem;
+// 	color: #555;
+// }
+
+// .word-count
+// {
+// 	display:inline-block;
+// 	padding: 0.1rem 0.4rem 0;
+// }
+
+// .menu-dropdown-button > button
+// {
+// 	@extend .button-not;
+// 	&:after
+// 	{
+// 		content: "▽";
+// 		display: inline-block;
+// 		font-size: 1rem;
+// 		padding: 0 0.3rem 0.3rem;
+// 		vertical-align: middle;
+// 	}
+// }
+
+// .menu-dropdown-button:hover > button
+// {
+// 	&:after
+// 	{
+// 		display: none;
+// 	}
+// }
+
+// .menu-dropdown-button:hover
+// {
+// 	margin-right: 2.1rem;
+// }
+
+// .menu-dropdown-button > ul
+// {
+// 	display: none;
+// }
+
+// .menu-dropdown-button:hover > ul
+// {
+// 	display: unset;
+// 	position: absolute;
+// 	top: 5.4rem;
+// 	right: 0.2rem;
+// 	padding: 1.2rem 0.6rem;
+// 	border: 1px solid rgba(0,0,0,0.1);
+// 	border-radius: 0.6rem;
+// 	box-shadow: 0px 3px 36px 6px rgba(0, 0, 0, 0.12);
+// 	background-color: $colorset_page-regular-background;
+
+// 	&:before
+// 	{
+// 		content: url('menu-top.png');
+// 		z-index: 100;
+// 		position: absolute;
+// 		top: -1.7rem;
+// 		right: 4.8rem;
+// 		width: 16px;
+// 		height: 16px;
+// 		background-color: transparent;
+// 	}
+
+// 	li
+// 	{
+// 		text-align: right;
+// 		font-size: 1.6rem;
+// 		list-style-type: none;
+// 	}
+// }
+
+// .floating-list
+// {
+// 	position: absolute;
+// 	top:18rem;
+// 	right: 0;
+// 	display: inline-block;
+// 	border: 1px solid #b6d6ef;
+// 	border-right: none;
+// 	border-radius: 0.4rem 0 0 0.4rem;
+// 	background-color: #d5e6f3;
+// 	cursor: pointer;
+
+// 	button
+// 	{
+// 		@extend .menu-dropdown-button;
+// 		display: block;
+// 		padding: 0.8rem 0.8rem 0.8rem 1.2rem;
+// 		margin-right: 0;
+// 	}
+// }
+
+// .floating-list.menu-dropdown-button:hover
+// {
+// 	margin-right: 0;
+
+// 	button
+// 	{
+// 		margin-right: 2.1rem;
+// 	}
+// 	ul
+// 	{
+// 		width: max-content;
+
+// 		&:before
+// 		{
+// 			content: url('menu-top.png');
+// 			z-index: 100;
+// 			position: absolute;
+// 			top: -1.7rem;
+// 			right: 4.9rem;
+// 			width: 16px;
+// 			height: 16px;
+// 			background-color: transparent;
+// 			// border: 5px solid red;
+// 		}
+// 	}
+// }
+
+// .menu-dropdown-list
+// {
+// 	li
+// 	{
+// 		display: list-item;
+// 	}
+// }
+

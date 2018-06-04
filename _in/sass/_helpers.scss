@@ -1,0 +1,221 @@
+
+
+
+
+/*****************************************************************************************\
+			$$ Helpers - Web Serial Theme
+\*****************************************************************************************/
+
+
+/*
+ * == Utilities
+ */
+
+
+/* Layout and positionning */
+@mixin centered
+{
+	margin-right: auto;
+	margin-left: auto;
+}
+
+@mixin flex-container
+{
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+}
+
+// ++ Typographic sizes
+@mixin txtcenter
+{
+	text-align: center;
+}
+
+@mixin uppercase
+{
+	text-transform: uppercase;
+}
+
+// Headings
+@mixin typo-xxxl
+{
+	font-size: 7.8rem;
+}
+
+@mixin typo-xxl
+{
+	font-size: 6.4rem;
+}
+
+@mixin typo-xl
+{
+	font-size: 5.2rem;
+}
+
+@mixin typo-l
+{
+	font-size: 4.0rem;
+}
+
+@mixin typo-m
+{
+	font-size: 2.8rem;
+}
+
+@mixin typo-s
+{
+	font-size: 2.1rem;
+}
+
+@mixin typo-xs
+{
+	font-size: 1.4rem;
+}
+
+@mixin typo-xxs
+{
+	font-size: 1.0rem;
+}
+
+/* ++ Typographic sizes */
+.typo-xxxl
+{
+	@include typo-xxxl;
+}
+
+.typo-xxl
+{
+	@include typo-xxl;
+}
+
+.typo-xl
+{
+	@include typo-xl;
+}
+
+.typo-l
+{
+	@include typo-l;
+}
+
+.typo-m
+{
+	@include typo-m;
+}
+
+.typo-s
+{
+	@include typo-s;
+}
+
+.typo-xs
+{
+	@include typo-xs;
+}
+
+.typo-xxs
+{
+	@include typo-xxs;
+}
+
+
+.small, .size-s
+{
+	@include typo-xs;
+	// line-height: 2;
+}
+
+/* ++ Component Default Aspect Inversion  */
+.button-not
+{
+	border: none;
+	font-family: "Iowan Old Style", Georgia, serif;
+	font-size: 1.7rem;
+	background-color: transparent;
+}
+
+
+/*
+ * == JS Classes
+ */
+
+.publite-button-show
+{
+	display: block;
+	position: fixed;
+	top: $atom*2;
+	right: $atom*2;
+	width: $canon*2;
+	height: $canon*2;
+	border: 1px solid $colorset-main_grey-darker;
+	color: $colorset-main_grey-light;;
+	background-color: $colorset-main_grey-dark;
+}
+
+.show-main-nav-interface, .show-alt-nav-interface, .show-comment-editor-interface
+{
+	@extend	.publite-button-show;
+}
+
+.show-main-nav-interface
+{
+
+}
+
+.show-alt-nav-interface
+{
+
+}
+
+.show-comment-editor-interface
+{
+
+}
+
+
+.publite-interface-panel
+{
+	background-color: orange;
+}
+
+.interface-main-nav
+{
+	@extend .publite-interface-panel;
+
+}
+
+.interface-alt-nav
+{
+	@extend .publite-interface-panel;
+
+}
+
+.interface-comment-editor
+{
+	@extend .publite-interface-panel;
+
+}
+
+.interface-comment-viewer
+{
+	@extend .publite-interface-panel;
+
+}
+
+.is-active
+{
+	border:	5px solid red;
+}
+
+.is-visible
+{
+	border:	5px solid black;
+}
+
+.state-initial
+{
+	// display: none;
+}

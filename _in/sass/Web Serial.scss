@@ -22,6 +22,10 @@ marquée des paragraphes.
  * 8. Debug
  */
 
-@import 'main';
+@import 'vars';
+@import 'normalize';
+@import 'helpers';
 @import 'components';
+@import 'blocks';
+@import 'marked';
 // @import 'debug';
