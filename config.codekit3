@@ -33,7 +33,7 @@
 		"oA": 1,
 		"oAP": "\/_out\/_blocks.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/_in\/sass\/_components.scss": {
@@ -46,20 +46,20 @@
 		"oA": 1,
 		"oAP": "\/_out\/_components.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/_in\/sass\/_debug.scss": {
 		"aP": 0,
 		"bl": 0,
-		"dP": 10,
+		"dP": 5,
 		"dS": 2,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/_in\/sass\/_debug.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/_in\/sass\/_helpers.scss": {
@@ -72,7 +72,7 @@
 		"oA": 1,
 		"oAP": "\/_out\/_helpers.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/_in\/sass\/_marked.scss": {
@@ -85,7 +85,7 @@
 		"oA": 1,
 		"oAP": "\/_out\/_marked.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/_in\/sass\/_normalize.scss": {
@@ -98,7 +98,7 @@
 		"oA": 1,
 		"oAP": "\/_out\/_normalize.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/_in\/sass\/_vars.scss": {
@@ -111,20 +111,20 @@
 		"oA": 1,
 		"oAP": "\/_out\/_vars.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/_in\/sass\/Web Serial.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
-		"dP": 10,
-		"dS": 1,
+		"dP": 5,
+		"dS": 2,
 		"ft": 4,
 		"ma": 1,
 		"oA": 0,
 		"oAP": "\/_out\/Web Serial.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/_out\/menu-top.png": {
@@ -132,14 +132,14 @@
 		"iS": 929,
 		"oA": 0,
 		"oAP": "\/_out\/menu-top.png",
-		"oF": 0,
+		"oF": 1,
 		"oIPL": 1,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
 	"\/_out\/Web Serial.css": {
-		"aP": 1,
+		"aP": 0,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
@@ -154,6 +154,16 @@
 		"oA": 0,
 		"oAP": "\/_out\/Web Serial.css.map",
 		"oF": 0
+		},
+	"\/_out\/web-serial.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/_out\/web-serial-min.css",
+		"oF": 1,
+		"oS": 3
 		},
 	"\/_test\/marked.html": {
 		"cB": 0,
@@ -187,31 +197,22 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"\/Web Serial - A Custom Marked Stylesheet.sublime-project": {
+	"\/Web Serial - Marked Theme.sublime-project": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/Web Serial - A Custom Marked Stylesheet.sublime-project",
-		"oF": 1
+		"oA": 0,
+		"oAP": "\/Web Serial - Marked Theme.sublime-project",
+		"oF": 0
 		},
-	"\/Web Serial - A Custom Marked Stylesheet.sublime-workspace": {
+	"\/Web Serial - Marked Theme.sublime-workspace": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/Web Serial - A Custom Marked Stylesheet.sublime-workspace",
-		"oF": 1
+		"oA": 0,
+		"oAP": "\/Web Serial - Marked Theme.sublime-workspace",
+		"oF": 0
 		}
 	},
 "hooks": [
-	{
-		"enabled": 0,
-		"name": "Hook #1",
-		"predicateDataBase64Encoded": "YnBsaXN0MDDUAQIDBAUGZGVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QFgcIDxQcJicqMTU6Oz5CRktMT1dbX2FVJG51bGzTCQoLDA0OXxAXTlNDb21wb3VuZFByZWRpY2F0ZVR5cGVfEA9OU1N1YnByZWRpY2F0ZXNWJGNsYXNzEAKAAoAV0hALERNaTlMub2JqZWN0c6ESgAOAFNQLFRYXGBkaG18QEU5TUmlnaHRFeHByZXNzaW9uXxAQTlNMZWZ0RXhwcmVzc2lvbl8QE05TUHJlZGljYXRlT3BlcmF0b3KAE4AOgASAEdUdHh8gCyEiIyQlWU5TT3BlcmFuZF5OU1NlbGVjdG9yTmFtZV8QEE5TRXhwcmVzc2lvblR5cGVbTlNBcmd1bWVudHOABoAFEAOACIANXHZhbHVlRm9yS2V5OtIfCygpEAGAB9IrLC0uWiRjbGFzc25hbWVYJGNsYXNzZXNfEBBOU1NlbGZFeHByZXNzaW9uoy0vMFxOU0V4cHJlc3Npb25YTlNPYmplY3TSEAsyNKEzgAmADNMLHzY3ODlZTlNLZXlQYXRogAsQCoAKXWlucHV0RmlsZW5hbWXSKyw8PV8QHE5TS2V5UGF0aFNwZWNpZmllckV4cHJlc3Npb26jPC8w0issP0BeTlNNdXRhYmxlQXJyYXmjP0EwV05TQXJyYXnSKyxDRF8QE05TS2V5UGF0aEV4cHJlc3Npb26kQ0UvMF8QFE5TRnVuY3Rpb25FeHByZXNzaW9u00cfC0hJSl8QD05TQ29uc3RhbnRWYWx1ZYAPEACAEF5XZWIgU2VyaWFsLmNzc9IrLE1OXxAZTlNDb25zdGFudFZhbHVlRXhwcmVzc2lvbqNNLzDVC1BRUlNUSVUjVlpOU01vZGlmaWVyWE5TTmVnYXRlWU5TT3B0aW9uc15OU09wZXJhdG9yVHlwZYASCBAE0issWFlfEBtOU0VxdWFsaXR5UHJlZGljYXRlT3BlcmF0b3KjWFowXxATTlNQcmVkaWNhdGVPcGVyYXRvctIrLFxdXxAVTlNDb21wYXJpc29uUHJlZGljYXRlo1xeMFtOU1ByZWRpY2F0ZdIrLEFgokEw0issYmNfEBNOU0NvbXBvdW5kUHJlZGljYXRlo2JeMF8QD05TS2V5ZWRBcmNoaXZlctFmZ1Ryb290gAEACAARABoAIwAtADIANwBQAFYAXQB3AIkAkACSAJQAlgCbAKYAqACqAKwAtQDJANwA8gD0APYA+AD6AQUBDwEeATEBPQE\/AUEBQwFFAUcBVAFZAVsBXQFiAW0BdgGJAY0BmgGjAagBqgGsAa4BtQG\/AcEBwwHFAdMB2AH3AfsCAAIPAhMCGwIgAjYCOwJSAlkCawJtAm8CcQKAAoUCoQKlArACuwLEAs4C3QLfAuAC4gLnAwUDCQMfAyQDPANAA0wDUQNUA1kDbwNzA4UDiAONAAAAAAAAAgEAAAAAAAAAaAAAAAAAAAAAAAAAAAAAA48=",
-		"runOrder": 0,
-		"scriptSourceString": "cp \"~\/Digital Creation\/Marked Themes\/Web Serial\/_out\/web Serial.css\" \"~\/Digital Creation\/Marked Themes\/Web Serial\/_out\/web-serial.css\"",
-		"scriptType": 1,
-		"uuidString": "336AF9C8-F1CB-4AFD-A614-807F49DA045D"
-		}
 	],
 "manualImportLinks": {
 	},
@@ -1989,7 +1990,7 @@
 		"autoOutputPathStyle": 0,
 		"createSourceMap": 0,
 		"outputStyle": 3,
-		"shouldRunAutoprefixer": 1,
+		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0
 		},
 	"languageDefaultsGIF": {
@@ -2136,7 +2137,7 @@
 		"createSourceMap": 1,
 		"debugStyle": 2,
 		"decimalPrecision": 5,
-		"outputStyle": 0,
+		"outputStyle": 1,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
 		"useLibsass": 1
