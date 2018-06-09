@@ -2,7 +2,12 @@
 	"folders":
 	[
 		{
-			"path": "."
+			"path": ".",
+			"name": "Complete Project Folder"
+		},
+		{
+			"path": "_in/sass",
+			"name": "sass"
 		}
 	]
 }

@@ -55,6 +55,31 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "_in/sass/_components.scss",
+			"settings":
+			{
+				"buffer_size": 4337,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_in/sass/_helpers.scss",
+			"settings":
+			{
+				"buffer_size": 2392,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_in/sass/_blocks.scss",
+			"settings":
+			{
+				"buffer_size": 4126,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -132,13 +157,13 @@
 	},
 	"expanded_folders":
 	[
-		"/Volumes/Data/vivien/Digital Creation/Marked Themes/Web Serial",
-		"/Volumes/Data/vivien/Digital Creation/Marked Themes/Web Serial/_in",
 		"/Volumes/Data/vivien/Digital Creation/Marked Themes/Web Serial/_in/sass"
 	],
 	"file_history":
 	[
+		"/Volumes/Data/vivien/Digital Creation/Marked Themes/Web Serial/_in/sass/_hacks.scss",
 		"/Volumes/Data/vivien/Digital Creation/Marked Themes/Web Serial/_in/sass/Web Serial.scss",
+		"/Volumes/Data/vivien/Digital Creation/Marked Themes/Web Serial/Web Serial - Marked Theme.sublime-project",
 		"/Volumes/Data/vivien/Digital Creation/Marked Themes/Web Serial/_out/web-serial.css",
 		"/Volumes/Data/vivien/Digital Creation/Marked Themes/Web Serial/_in/sass/_components.scss",
 		"/Volumes/Data/vivien/Digital Creation/Marked Themes/Web Serial/_in/sass/_vars.scss",
@@ -263,9 +288,7 @@
 		"/Volumes/Data/vivien/Pictures/PhotoRec Recovery/recup_dir.1/report.xml",
 		"/Volumes/Data/vivien/Desktop/Déclaration Handicap Sonia.md",
 		"/Volumes/OSX Data/Users/vivien/Movies/Geek/Base-Ball.gifv",
-		"/Volumes/OSX Data/Users/vivien/Movies/Geek/Wasted.gifv",
-		"/Volumes/OSX Data/Users/vivien/Movies/Geek/People's Elbow.gifv",
-		"/Volumes/OSX Data/Users/vivien/Movies/Geek/Parade Nuptiale.gifv"
+		"/Volumes/OSX Data/Users/vivien/Movies/Geek/Wasted.gifv"
 	],
 	"find":
 	{
@@ -300,8 +323,99 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "_in/sass/_components.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4337,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "_in/sass/_helpers.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2392,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "_in/sass/_blocks.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4126,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -426,7 +540,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 179.0,
+	"side_bar_width": 211.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
