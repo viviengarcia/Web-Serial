@@ -920,6 +920,13 @@ table tr:nth-child(2n) {
   padding: 1.2rem 0 0;
 }
 
+@media screen and (min-width: 768px) {
+  /* line 72, Volumes/Data/vivien/Digital Creation/Marked Themes/Web Serial/_in/sass/_blocks.scss */
+  .container-main-content {
+    width: 65rem;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   /* line 72, Volumes/Data/vivien/Digital Creation/Marked Themes/Web Serial/_in/sass/_blocks.scss */
   .container-main-content {
@@ -927,25 +934,25 @@ table tr:nth-child(2n) {
   }
 }
 
-/* line 83, Volumes/Data/vivien/Digital Creation/Marked Themes/Web Serial/_in/sass/_blocks.scss */
+/* line 87, Volumes/Data/vivien/Digital Creation/Marked Themes/Web Serial/_in/sass/_blocks.scss */
 .content-chapter {
   padding-bottom: 4.2rem;
 }
 
-/* line 87, Volumes/Data/vivien/Digital Creation/Marked Themes/Web Serial/_in/sass/_blocks.scss */
+/* line 91, Volumes/Data/vivien/Digital Creation/Marked Themes/Web Serial/_in/sass/_blocks.scss */
 .content-chapter p {
-  padding: 0.3rem 0 0;
+  padding: 1.5rem 0 0;
   text-indent: 1.6rem;
   text-align: justify;
   text-align-last: auto;
 }
 
-/* line 95, Volumes/Data/vivien/Digital Creation/Marked Themes/Web Serial/_in/sass/_blocks.scss */
+/* line 99, Volumes/Data/vivien/Digital Creation/Marked Themes/Web Serial/_in/sass/_blocks.scss */
 .content-chapter ul + p, .content-chapter p:first-of-type {
   text-indent: unset;
 }
 
-/* line 100, Volumes/Data/vivien/Digital Creation/Marked Themes/Web Serial/_in/sass/_blocks.scss */
+/* line 104, Volumes/Data/vivien/Digital Creation/Marked Themes/Web Serial/_in/sass/_blocks.scss */
 .content-chapter h2.typo-m {
   text-transform: uppercase;
   font-size: 2.8rem;
@@ -953,17 +960,20 @@ table tr:nth-child(2n) {
   font-family: Alegreya, "Iowan Old Style", Georgia, serif;
 }
 
-/* line 108, Volumes/Data/vivien/Digital Creation/Marked Themes/Web Serial/_in/sass/_blocks.scss */
+/* line 112, Volumes/Data/vivien/Digital Creation/Marked Themes/Web Serial/_in/sass/_blocks.scss */
 .content-chapter hr {
-  margin: 2.4rem 0 0;
+  border-top: 2px solid #babab9;
+  width: 50%;
+  padding: 1.8rem 0 0;
+  margin: 6rem auto 0;
 }
 
-/* line 113, Volumes/Data/vivien/Digital Creation/Marked Themes/Web Serial/_in/sass/_blocks.scss */
+/* line 120, Volumes/Data/vivien/Digital Creation/Marked Themes/Web Serial/_in/sass/_blocks.scss */
 .content-chapter ul > li {
   list-style-type: none;
 }
 
-/* line 117, Volumes/Data/vivien/Digital Creation/Marked Themes/Web Serial/_in/sass/_blocks.scss */
+/* line 124, Volumes/Data/vivien/Digital Creation/Marked Themes/Web Serial/_in/sass/_blocks.scss */
 .content-chapter ul > li:before {
   content: '\25aa \a0';
   display: inline-block;

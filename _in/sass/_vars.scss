@@ -126,6 +126,8 @@ $media-tablet-retina-landscape:    "only screen and ( -webkit-min-device-pixel-r
 
 
 // @media desktop
+$media-desktop-extra-small: "screen and ( min-width: 768px )";
+
 $media-desktop-small: "screen and ( min-width: 1024px )";
 
 $media-desktop-small-retina:   "only screen and ( -moz-min-device-pixel-ratio: 2 ) and ( min-width: 1024px ),

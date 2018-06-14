@@ -75,6 +75,10 @@
 	margin: 0 auto;
 	padding: 1.2rem 0 0;
 
+
+	@media #{$media-desktop-extra-small} {
+		width: 65rem;
+	}
 	@media #{$media-desktop-small} {
 		width: 65rem;
 	}
@@ -86,7 +90,7 @@
 
 	p
 	{
-		padding: 0.3rem 0 0;
+		padding: 1.5rem 0 0;
 		text-indent: 1.6rem;
 		text-align: justify;
 		text-align-last: auto;
@@ -107,7 +111,10 @@
 
 	hr
 	{
-		margin:	2.4rem 0 0;
+		border-top: 2px solid $colorset-main_grey-light;
+		width: 50%;
+		padding: 1.8rem 0 0;
+		margin: 6rem auto 0;
 	}
 
 	ul > li
